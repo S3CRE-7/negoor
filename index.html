@@ -34,6 +34,10 @@
         padding: 0;
       }
 
+      h2 {
+        font-size: 5rem;
+      }
+
       h1 {
         font-size: 2.5rem;
         color: #005662;
@@ -56,6 +60,7 @@
         cursor: pointer;
         transition: background 0.3s;
         margin-top: 20px;
+        font-family: "Rubik", sans-serif;
       }
 
       button:hover {
@@ -108,6 +113,7 @@
     <section id="section1" class="visible">
       <h1>خوش آومدی!</h1>
       <p>بیا یه بازی کنیم. آماده ای ؟</p>
+
       <button onclick="navigateTo('section2')">بزن بریم</button>
     </section>
 
@@ -132,10 +138,16 @@
       <button class="reveal-button" onclick="revealFinalMessage()">
         نمایان کن
       </button>
-      <p class="hidden-text">
-        خیلی ممنونم که انقدر دوست خوبی هستی. دمت گرم که تو این شرایط کنارمی .
-        برات ارزوی موفقیت می کنم🤍
-      </p>
+      <span class="hidden-text">
+        <p>
+          خیلی ممنونم که انقدر دوست خوبی هستی. دمت گرم که تو این شرایط کنارمی .
+          برات ارزوی موفقیت می کنم🤍
+        </p>
+        <p>
+          و اینکه عذرخواهی می کنم نتونستم جوابتو بدم. خوب می دونم خوشت نمیاد بهت
+          بی توجهی شه. بدون حواسم هست بازم ببخشید🐳
+        </p>
+      </span>
       <button onclick="navigateTo('section1')">از اول</button>
     </section>
 
