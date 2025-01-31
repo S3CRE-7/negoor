@@ -93,10 +93,19 @@
 
       footer {
         text-align: center;
-        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
         font-size: 0.9rem;
         background: #f1f8e9;
         color: #33691e;
+        z-index: 10;
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
       }
 
       .hidden-text {
@@ -151,7 +160,7 @@
       <button onclick="navigateTo('section1')">از اول</button>
     </section>
 
-    <footer>ساخته شده با 💛 برای یه آدم خاص</footer>
+    <footer class="footer">ساخته شده با 💛 برای یه آدم خاص</footer>
 
     <script>
       // Function to navigate between sections
